@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var gameMessageLabel: UILabel!
     @IBOutlet weak var instructionLabel: UILabel!
     
+    var secretNumber: Int = 0
+    var numberOfTries: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,13 +37,39 @@ class ViewController: UIViewController {
 
     @IBAction func startGameAction(_ sender: AnyObject) {
         
+        //GAME STARTED STATE
+        instructionLabel.isHidden = false
+        inputTextField.isHidden = false
+        guessButton.isHidden = false
+        gameMessageLabel.isHidden = false
+        startGameButton.isHidden = true
+        
+        secretNumber = generateRandomNumberUpTo(max: 20)
     }
     
     @IBAction func guessButtonAction(_ sender: AnyObject) {
         
+        let userInput = Int(inputTextField.text!)!
+        
+        if (userInput == secretNumber) {
+         
+            //Win! End game
+            gameMessageLabel.text = "Congratulations! You guessed it right!"
+        }
+        else if (userInput > secretNumber) {
+            
+            gameMessageLabel.text = "Your guess was too big!"
+        }
+        else if (userInput < secretNumber) {
+            
+            gameMessageLabel.text = "Your guess was too small!"
+        }
     }
     
-    
+    func generateRandomNumberUpTo(max: Int) -> Int {
+        
+        return Int(arc4random_uniform(UInt32(max)) + 1)
+    }
 
 }
 
