@@ -23,12 +23,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        setupView()
+        
+        downloadDataFromServer()
+    }
+    
+    func setupView() {
+        
         //INITIAL STATE
         instructionLabel.isHidden = true
         inputTextField.isHidden = true
         guessButton.isHidden = true
         gameMessageLabel.isHidden = true
         gameMessageLabel.text = ""
+    }
+    
+    func downloadDataFromServer() {
+        
+        //downloadFromServer
+        
+        //
     }
 
     override func didReceiveMemoryWarning() {

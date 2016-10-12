@@ -12,6 +12,11 @@
 		249196D11DA8CDEF00DB604F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249196CF1DA8CDEF00DB604F /* Main.storyboard */; };
 		249196D31DA8CDEF00DB604F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249196D21DA8CDEF00DB604F /* Assets.xcassets */; };
 		249196D61DA8CDEF00DB604F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249196D41DA8CDEF00DB604F /* LaunchScreen.storyboard */; };
+		249196DE1DA8E3AC00DB604F /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249196DD1DA8E3AC00DB604F /* DemoViewController.swift */; };
+		24B9E9BA1DAD0EDE00599AB8 /* Demo2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9E9B91DAD0EDE00599AB8 /* Demo2ViewController.swift */; };
+		24B9E9BC1DAD147100599AB8 /* Demo3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9E9BB1DAD147100599AB8 /* Demo3ViewController.swift */; };
+		24B9E9BE1DAD173E00599AB8 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9E9BD1DAD173E00599AB8 /* BlueViewController.swift */; };
+		24B9E9C01DAD190E00599AB8 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9E9BF1DAD190E00599AB8 /* GreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		249196D21DA8CDEF00DB604F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		249196D51DA8CDEF00DB604F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		249196D71DA8CDEF00DB604F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249196DD1DA8E3AC00DB604F /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		24B9E9B91DAD0EDE00599AB8 /* Demo2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo2ViewController.swift; sourceTree = "<group>"; };
+		24B9E9BB1DAD147100599AB8 /* Demo3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo3ViewController.swift; sourceTree = "<group>"; };
+		24B9E9BD1DAD173E00599AB8 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		24B9E9BF1DAD190E00599AB8 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,15 @@
 			children = (
 				249196CB1DA8CDEF00DB604F /* AppDelegate.swift */,
 				249196CD1DA8CDEF00DB604F /* ViewController.swift */,
+				249196DD1DA8E3AC00DB604F /* DemoViewController.swift */,
+				24B9E9B91DAD0EDE00599AB8 /* Demo2ViewController.swift */,
+				24B9E9BB1DAD147100599AB8 /* Demo3ViewController.swift */,
 				249196CF1DA8CDEF00DB604F /* Main.storyboard */,
 				249196D21DA8CDEF00DB604F /* Assets.xcassets */,
 				249196D41DA8CDEF00DB604F /* LaunchScreen.storyboard */,
 				249196D71DA8CDEF00DB604F /* Info.plist */,
+				24B9E9BD1DAD173E00599AB8 /* BlueViewController.swift */,
+				24B9E9BF1DAD190E00599AB8 /* GreenViewController.swift */,
 			);
 			path = GuessingGame;
 			sourceTree = "<group>";
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249196DE1DA8E3AC00DB604F /* DemoViewController.swift in Sources */,
 				249196CE1DA8CDEF00DB604F /* ViewController.swift in Sources */,
+				24B9E9BA1DAD0EDE00599AB8 /* Demo2ViewController.swift in Sources */,
+				24B9E9BC1DAD147100599AB8 /* Demo3ViewController.swift in Sources */,
+				24B9E9BE1DAD173E00599AB8 /* BlueViewController.swift in Sources */,
 				249196CC1DA8CDEF00DB604F /* AppDelegate.swift in Sources */,
+				24B9E9C01DAD190E00599AB8 /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +322,7 @@
 				249196DC1DA8CDEF00DB604F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
