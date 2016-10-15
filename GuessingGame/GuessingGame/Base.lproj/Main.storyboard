@@ -182,12 +182,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxg-kz-5gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="385" y="1469"/>
+            <point key="canvasLocation" x="385" y="1576"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
+        <scene sceneID="gR6-rS-fXD">
+            <objects>
+                <viewController id="ntD-SG-qkA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ExZ-iP-f1r"/>
+                        <viewControllerLayoutGuide type="bottom" id="uaC-al-kMs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CJ8-f7-i3X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9uG-EJ-Lbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153" y="1702"/>
+        </scene>
+        <!--Item2 View Controller-->
         <scene sceneID="fPz-d6-KDo">
             <objects>
-                <viewController id="LnB-5y-dey" sceneMemberID="viewController">
+                <viewController id="LnB-5y-dey" customClass="Item2ViewController" customModule="GuessingGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AHt-7f-ssW"/>
                         <viewControllerLayoutGuide type="bottom" id="hfs-XN-e9L"/>
@@ -195,13 +213,67 @@
                     <view key="view" contentMode="scaleToFill" id="XGD-ar-PIv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NDR-O7-vS3">
+                                <frame key="frameInset" minY="122" width="375" height="422"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Message_Cell" rowHeight="94" id="6VL-ts-oLY" customClass="DemoMessageCell" customModule="GuessingGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6VL-ts-oLY" id="uwO-Df-rWQ">
+                                            <frame key="frameInset" width="375" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oct 13th, 8.03 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3z-5i-xOj">
+                                                    <frame key="frameInset" minX="8" minY="8" width="205" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello world!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3w-7H-qMG">
+                                                    <frame key="frameInset" minX="66" minY="37" width="301" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ZPv-lg-c9d">
+                                                    <frame key="frameInset" minX="8" minY="30" width="50" height="55"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx5-NZ-B7k">
+                                                    <frame key="frameInset" minX="208" minY="8" width="159" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="G3w-7H-qMG" id="2bY-gT-Va0"/>
+                                            <outlet property="timeLabel" destination="N3z-5i-xOj" id="2ir-Hd-W3D"/>
+                                            <outlet property="userImageView" destination="ZPv-lg-c9d" id="PHM-F4-9Ez"/>
+                                            <outlet property="usernameLabel" destination="Jx5-NZ-B7k" id="kwO-kz-MdQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="euZ-KA-fVh"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="euZ-KA-fVh"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="NDR-O7-vS3" id="Z10-EO-zfk"/>
+                        <segue destination="ntD-SG-qkA" kind="show" identifier="GoToMessageDetailsVC" id="Q6G-It-Y2u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTT-9y-Nn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="385" y="810"/>
+            <point key="canvasLocation" x="384.80000000000001" y="809.14542728635683"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4N9-RM-gLv">

@@ -17,6 +17,9 @@
 		24B9E9BC1DAD147100599AB8 /* Demo3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9E9BB1DAD147100599AB8 /* Demo3ViewController.swift */; };
 		24B9E9BE1DAD173E00599AB8 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9E9BD1DAD173E00599AB8 /* BlueViewController.swift */; };
 		24B9E9C01DAD190E00599AB8 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9E9BF1DAD190E00599AB8 /* GreenViewController.swift */; };
+		24B9E9E21DAFAFE700599AB8 /* Item2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9E9E11DAFAFE700599AB8 /* Item2ViewController.swift */; };
+		24B9E9E41DAFB03600599AB8 /* DemoMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9E9E31DAFB03600599AB8 /* DemoMessageCell.swift */; };
+		24B9E9E61DAFB2FE00599AB8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9E9E51DAFB2FE00599AB8 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		24B9E9BB1DAD147100599AB8 /* Demo3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo3ViewController.swift; sourceTree = "<group>"; };
 		24B9E9BD1DAD173E00599AB8 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		24B9E9BF1DAD190E00599AB8 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		24B9E9E11DAFAFE700599AB8 /* Item2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item2ViewController.swift; sourceTree = "<group>"; };
+		24B9E9E31DAFB03600599AB8 /* DemoMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoMessageCell.swift; sourceTree = "<group>"; };
+		24B9E9E51DAFB2FE00599AB8 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				249196D71DA8CDEF00DB604F /* Info.plist */,
 				24B9E9BD1DAD173E00599AB8 /* BlueViewController.swift */,
 				24B9E9BF1DAD190E00599AB8 /* GreenViewController.swift */,
+				24B9E9E11DAFAFE700599AB8 /* Item2ViewController.swift */,
+				24B9E9E31DAFB03600599AB8 /* DemoMessageCell.swift */,
+				24B9E9E51DAFB2FE00599AB8 /* Message.swift */,
 			);
 			path = GuessingGame;
 			sourceTree = "<group>";
@@ -154,9 +163,12 @@
 			files = (
 				249196DE1DA8E3AC00DB604F /* DemoViewController.swift in Sources */,
 				249196CE1DA8CDEF00DB604F /* ViewController.swift in Sources */,
+				24B9E9E41DAFB03600599AB8 /* DemoMessageCell.swift in Sources */,
 				24B9E9BA1DAD0EDE00599AB8 /* Demo2ViewController.swift in Sources */,
 				24B9E9BC1DAD147100599AB8 /* Demo3ViewController.swift in Sources */,
+				24B9E9E21DAFAFE700599AB8 /* Item2ViewController.swift in Sources */,
 				24B9E9BE1DAD173E00599AB8 /* BlueViewController.swift in Sources */,
+				24B9E9E61DAFB2FE00599AB8 /* Message.swift in Sources */,
 				249196CC1DA8CDEF00DB604F /* AppDelegate.swift in Sources */,
 				24B9E9C01DAD190E00599AB8 /* GreenViewController.swift in Sources */,
 			);
